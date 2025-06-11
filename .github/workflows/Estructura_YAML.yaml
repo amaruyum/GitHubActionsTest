@@ -1,8 +1,11 @@
 name: Estructura YAML
-on: [ Push ]
+
+on: push
+
 jobs:
   Build_and_test:
     runs-on: ubunto-latest
+
     steps:
       - run: echo "Hola GitHub Actions"
       - run: echo "Probemos si todo esta bien"
