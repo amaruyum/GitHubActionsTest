@@ -4,7 +4,7 @@ on: push
 
 jobs:
   Build_and_test:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
 
     steps:
       - run: echo "Hola GitHub Actions"
