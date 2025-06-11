@@ -1,0 +1,19 @@
+name: Dependencia entre jobs
+
+on: push
+
+jobs:
+  First_job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Primer Hola 
+      run: echo "Primer job"
+
+  Second_job:
+    needs: First_job
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Segundo Hola
+      run: echo "Segundo job"
